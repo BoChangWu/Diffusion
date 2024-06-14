@@ -42,5 +42,3 @@ U-Net是一種特殊類型的卷積神經網路（CNN），最初是設計來用
 ![alt text](/img/unet.png)
 
 在訓練過程中，U-Net會需要在forward process過程中第$t$步及其結果$X_t$作為輸入，透過運算得到第$t$步的noise作為output，接著將X_t去除noise就可以得到第t-1步的結果$X_(t-1)$，這正是我們reverse process的過程。
-
-## 訓練結果
